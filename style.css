@@ -1,5 +1,6 @@
+/* Umum */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   margin: 0;
   padding: 0;
@@ -16,24 +17,25 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   text-align: center;
   max-width: 600px;
-  width: 90%;
+  width: 95%;
 }
 
 h1 {
   color: #e63946;
+  font-size: 1.8rem;
 }
 
 .subtitle {
   color: #555;
   margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 /* Slideshow */
 .slideshow {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  height: 300px;
+  height: 250px;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 15px;
@@ -72,37 +74,53 @@ h1 {
 .message {
   margin-top: 20px;
   color: #333;
+  font-size: 1rem;
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
+.message h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Tombol umum */
+button, .wa-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
   border: none;
   border-radius: 10px;
-  background: #e63946;
-  color: white;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+}
+
+/* Tombol Musik */
+button {
+  background: #e63946;
+  color: white;
 }
 
 button:hover {
   background: #c1121f;
 }
+
+/* Tombol WhatsApp */
 .wa-btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  border-radius: 10px;
   background: #25D366;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .wa-btn:hover {
   background: #128C7E;
 }
 
+/* 📱 Responsive Mobile */
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+  .subtitle { font-size: 0.9rem; }
+  .message p, .message h2 { font-size: 0.95rem; }
+  .slideshow { height: 200px; }
+  button, .wa-btn { width: 100%; font-size: 15px; }
+}
