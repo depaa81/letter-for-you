@@ -21,7 +21,7 @@ function prevSlide() {
 let audio;
 function playMusic() {
   if (!audio) {
-    audio = new Audio('music/love-song.mp3');
+    audio = new Audio('music/penjaga hati.mp3');
   }
   audio.play();
 }
